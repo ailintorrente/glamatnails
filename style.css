@@ -1,5 +1,6 @@
 :root{
     --color-rosa: #F56476;
+    --color-rosa-transparente: #F5647688;
 }
 
 body{
@@ -49,4 +50,20 @@ a.nav-link:hover {
 }
 .btn-glam-pink:hover{
     background-color: #F5647688;
+}
+
+.list-group-item.active {
+  background-color: var(--color-rosa);
+  border-color: var(--color-rosa);
+  color: white;
+}
+
+.list-group-item:hover{
+  background-color: var(--color-rosa-transparente);
+  border-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.list-group-item {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
