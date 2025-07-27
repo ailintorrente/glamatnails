@@ -40,3 +40,13 @@ a.nav-link:hover {
     z-index: 1;
     padding: 1rem;
 }
+
+.btn-glam-pink{
+    background-color: var(--color-rosa);
+    color: white;
+    padding: 15px 50px;
+    border-radius: 30px;
+}
+.btn-glam-pink:hover{
+    background-color: #F5647688;
+}
