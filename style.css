@@ -1,0 +1,42 @@
+:root{
+    --color-rosa: #F56476;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+a.nav-link:hover {
+    color: var(--color-rosa);
+}
+
+.header-container {
+    height: 100vh;
+    background-image: url(./imagenes/portada.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000AF;
+    z-index: 0;
+}
+
+.header-text {
+    z-index: 1;
+    padding: 1rem;
+}
