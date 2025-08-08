@@ -41,3 +41,102 @@ const servicios = {
       `;
     });
   });
+
+
+  // FORMULARIO ENVIO A WHATSAPP
+  const servicioSelect = document.getElementById("servicio");
+  const tipoDisenio = document.getElementById("opciones-diseno");
+
+  servicioSelect.addEventListener("change", function () {
+    const valor = this.value;
+    
+    if (valor !== "Manicuría" && valor !== "") {
+      tipoDisenio.classList.remove("d-none");
+    } else {
+      tipoDisenio.classList.add("d-none");
+    }
+  });
+
+  document.getElementById("formularioContacto").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const edad = parseInt(document.getElementById("edad").value);
+    const servicio = servicioSelect.value;
+    const remocion = document.querySelector('input[name="remocion"]:checked').value;
+    const diseno = document.getElementById("tipo-diseno").value;
+
+    if (edad < 18) {
+      Swal.fire({
+      icon: 'warning',
+      title: 'Atención',
+      text: 'Lo sentimos, no se realizan servicios a menores de edad',
+      confirmButtonColor: '#F56476'
+    });
+    return;
+}
+
+    let mensaje = `Hola! Soy ${nombre}, tengo ${edad} años y quiero reservar un turno para: ${servicio}.`;
+
+    if (remocion === "Sí") {
+      mensaje += ` Tengo un trabajo hecho en mis uñas para remover.`;
+    }
+
+    if (servicio !== "Manicuría" && diseno) {
+      mensaje += ` En cuanto al diseño, me gustaría: ${diseno}.`;
+    }
+
+    mensaje += " Por favor cuando puedan, me enviarían los turnos?";
+
+    const url = `https://wa.me/5491123856238?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+  });
+
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = Array.from(document.querySelectorAll('.navbar-nav .nav-link'));
+    const sections = Array.from(document.querySelectorAll('main section[id]'));
+    const homeLink = links.find(a => a.getAttribute('href') === '#' || a.getAttribute('href') === '');
+
+    // helper: set active by href
+    const setActive = (hash) => {
+      links.forEach(a => a.classList.remove('active'));
+      const target = links.find(a => a.getAttribute('href') === hash);
+      (target || homeLink)?.classList.add('active');
+    };
+
+    // al cargar, marcar HOME
+    setActive('#');
+
+    // observar secciones; cuando una esté centrada en viewport, activarla
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          setActive('#' + id);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '-45% 0px -45% 0px', // “zona activa” alrededor del centro
+      threshold: 0
+    });
+
+    sections.forEach(sec => io.observe(sec));
+
+    // si volvés muy arriba, activar HOME
+    window.addEventListener('scroll', () => {
+      if (window.scrollY < 120) setActive('#');
+    });
+
+    // cerrar el menú en mobile cuando clickeás un link (UX)
+    const bsCollapse = document.getElementById('navbarNav');
+    links.forEach(link => link.addEventListener('click', () => {
+      const collapse = bootstrap.Collapse.getInstance(bsCollapse);
+      if (collapse) collapse.hide();
+    }));
+  });

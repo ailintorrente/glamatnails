@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./imagenes/ailinn png.png" type="image/png">
+    <title>Glam at Nails - Uñas perfectas en Boedo, CABA</title>
+    <meta name="description" content="Servicios de manicuría, semipermanente, capping y esculpidas en Boedo. Glam at Nails, donde tus uñas son tu carta de presentación.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gloria+Hallelujah&family=Handlee&family=Indie+Flower&family=Oswald:wght@200..700&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top fw-semibold shadow" data-bs-theme="dark" style="z-index: 1000;">
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top fw-semibold shadow" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Glam at Nails</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="MenuHamburguesa">
@@ -24,13 +27,16 @@
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICIOS</a>
+                        <a class="nav-link" href="#servicios">SERVICIOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">GALERÍA</a>
+                        <a class="nav-link" href="#galeria">GALERÍA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTO</a>
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">RESERVÁ</a>
                     </li>
                 </ul>
             </div>
@@ -39,19 +45,19 @@
 
     <header class="header-container">
         <div class="header-text">
-            <p class="fs-4">Tus uñas son tu carta de presentación</p>
-            <h1 class="display-5 fw-bold mb-5">¡En Glam at Nails te las dejamos perfectas!</h1>
-            <a class="btn btn-glam-pink" href="https://wa.me/5491123856238?" target="_blank" rel="noopener">
+            <p class="fs-4" data-aos="fade-down">Tus uñas son tu carta de presentación</p>
+            <h1 class="display-5 fw-bold mb-5" data-aos="fade-down">¡En Glam at Nails te las dejamos perfectas!</h1>
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back"><a class="btn btn-glam-pink" role="button" href="https://wa.me/5491123856238?" target="_blank" rel="noopener">
             <i class="bi bi-whatsapp"></i> Reservá tu turno acá
-        </a>
+        </a></div>
         </div>
     </header>
 
     <main>
-        <section id="servicios" class="py-5 mt-4">
+        <section id="servicios" class="py-5 mt-4" aria-labelledby="titulo-servicios">
             <div class="container">
-                <h2 class="text-center mb-5 fw-bold">Nuestros Servicios</h2>
-                <div class="row">
+                <h2 id="titulo-servicios" class="text-center mb-5 fw-bold"  data-aos="fade-right">Nuestros Servicios</h2>
+                <div class="row" data-aos="fade-right">
                     <div class="col-md-4">
                         <ul class="list-group">
                             <li class="list-group-item list-group-item-action active" data-id="1">Manicuría Clásica / Rusa</li>
@@ -81,12 +87,294 @@
             </div>
         </section>
 
+        <section id="galeria" class="py-5 bg-light" aria-labelledby="titulo-galeria">
+          <div class="container">
+            <h2 id="titulo-galeria" class="text-center mb-5 fw-bold" data-aos="fade-left">Galería de Trabajos</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+
+              <!-- Imagen 1 -->
+              <div class="col" data-aos="fade-right" data-aos-duration="1300">
+                <div class="galeria-item position-relative overflow-hidden rounded shadow-sm">
+                  <img src="./imagenes/esculpidas-acrigel-rosa-variado.JPEG" class="img-fluid" alt="Esculpidas en Acrigel con decoraciones rosa">
+                  <div class="overlay d-flex flex-column justify-content-center align-items-center text-center text-white px-2">
+                    <p class="mb-1 fw-bold">Esculpidas con Acrigel</p>
+                    <small>Decoración simple en rosa (auras y french) + decoración simple con efecto metalizado + strass perla + relieves</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Imagen 2 -->
+              <div class="col" data-aos="fade-right" data-aos-duration="1300">
+                <div class="galeria-item position-relative overflow-hidden rounded shadow-sm">
+                  <img src="./imagenes/capping-base-azul-plata.JPEG" class="img-fluid" alt="Capping con base, con decoración metalizada">
+                  <div class="overlay d-flex flex-column justify-content-center align-items-center text-center text-white px-2">
+                    <p class="mb-1 fw-bold">Capping con Base</p>
+                    <small>Decoración simple con efecto metalizado</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Imagen 3 -->
+              <div class="col" data-aos="fade-right" data-aos-duration="1300">
+                <div class="galeria-item position-relative overflow-hidden rounded shadow-sm">
+                  <img src="./imagenes/semi-cartoon-coraje.JPEG" class="img-fluid" alt="Semipermanente con manicuría rusa y caricaturas">
+                  <div class="overlay d-flex flex-column justify-content-center align-items-center text-center text-white px-2">
+                    <p class="mb-1 fw-bold">Semipermanente con manicuría rusa</p>
+                    <small>Caricaturas</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Imagen 4 -->
+              <div class="col" data-aos="fade-right" data-aos-duration="1300">
+                <div class="galeria-item position-relative overflow-hidden rounded shadow-sm">
+                  <img src="./imagenes/esculpidas-acrilico-babyboomer.JPEG" class="img-fluid" alt="Esculpidas en Acrílico con babyboomer y mármol">
+                  <div class="overlay d-flex flex-column justify-content-center align-items-center text-center text-white px-2">
+                    <p class="mb-1 fw-bold">Esculpidas en Acrílico</p>
+                    <small>Técnicas mixtas (babyboomer y mármol)</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Imagen 5 -->
+              <div class="col" data-aos="fade-left" data-aos-duration="1300">
+                <div class="galeria-item position-relative overflow-hidden rounded shadow-sm">
+                  <img src="./imagenes/capping-base-cromado.JPEG" class="img-fluid" alt="Esculpidas en Acrigel con efecto cromado">
+                  <div class="overlay d-flex flex-column justify-content-center align-items-center text-center text-white px-2">
+                    <p class="mb-1 fw-bold">Esculpidas en Acrigel</p>
+                    <small>Efecto cromado</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Imagen 6 -->
+              <div class="col" data-aos="fade-left" data-aos-duration="1300">
+                <div class="galeria-item position-relative overflow-hidden rounded shadow-sm">
+                  <img src="./imagenes/capping-base-diseno-variado.JPEG" class="img-fluid" alt="Capping con base, con decoraciones simples e intermedias">
+                  <div class="overlay d-flex flex-column justify-content-center align-items-center text-center text-white px-2">
+                    <p class="mb-1 fw-bold">Capping con base</p>
+                    <small>Decoración simple (auras, moños, líneas, cerezas) + intermedia (conejo) + relieve + aplique</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Imagen 7 -->
+              <div class="col" data-aos="fade-left" data-aos-duration="1300">
+                <div class="galeria-item position-relative overflow-hidden rounded shadow-sm">
+                  <img src="./imagenes/capping-acrigel-blooming-blanco.JPEG" class="img-fluid" alt="Capping con Acrigel, con efecto blooming">
+                  <div class="overlay d-flex flex-column justify-content-center align-items-center text-center text-white px-2">
+                    <p class="mb-1 fw-bold">Capping con Acrigel</p>
+                    <small>Efecto Blooming</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Imagen 8 -->
+              <div class="col" data-aos="fade-left" data-aos-duration="1300">
+                <div class="galeria-item position-relative overflow-hidden rounded shadow-sm">
+                  <img src="./imagenes/semi-stitch.JPEG" class="img-fluid" alt="Semipermanente con caricatura y decoraciones simples">
+                  <div class="overlay d-flex flex-column justify-content-center align-items-center text-center text-white px-2">
+                    <p class="mb-1 fw-bold">Semipermanente</p>
+                    <small>Caricatura + decoraciones simples</small>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="py-5" aria-labelledby="titulo-faq" data-aos="fade-right">
+          <div class="container">
+            <h2 id="titulo-faq" class="text-center mb-5 fw-bold">Preguntas Frecuentes</h2>
+
+            <div class="accordion" id="accordionFAQ">
+
+              <!-- Pregunta 1 -->
+              <div class="accordion-item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+                <h3 class="accordion-header" id="heading1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1"> ¿Cuánto duran los servicios? </button>
+                </h3>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body">Cualquiera de los servicios que se realizan en Glam at Nails duran alrededor <strong>de 15 a 21 días</strong>, dependiendo del cuidado que se le de, el largo y el estado de las uñas naturales. Importante: No dejar pasar más del tiempo recomendado tanto para volver a realizar un servicio como para retirarlo, ya que puede generarse humedad, hongos o lesiones (como por ejemplo que se quebren las uñas).
+                  </div>
+                </div>
+              </div>
+
+                <!-- Pregunta 2 -->
+              <div class="accordion-item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+                <h3 class="accordion-header" id="heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2"> ¿Tengo que dejar descansar las uñas?</button>
+                </h3>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body">Es un tema extenso, pero como respuesta concisa diría que <strong>depende</strong>. Si se realiza una buena manicura sin dañar la uña, se cumple con el service a tiempo y se le da los cuidados correspondientes al servicio, las uñas <strong>no tendrían por qué dañarse</strong>, consecuentemente tampoco sería necesario dejarlas descansar. <br>En cambio, si en más de una ocasión el servicio fue arrancado o levantado por un mal cuidado o por dejar pasar mucho tiempo, las uñas habrán quedado más delgadas y el producto <strong>ya no se adhiere de la misma manera que antes</strong>. En esos casos, lo ideal es sacar todo el producto y dejarlas descansar hasta que crezca de nuevo por completo la uña, unos 5 meses aproximadamente (dependiendo del largo del lecho ungueal y de la velocidad en la que crezcan).
+                  </div>
+                </div>
+              </div>
+
+                <!-- Pregunta 3 -->
+              <div class="accordion-item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+                <h3 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3"> ¿Cómo reservo un turno? </button>
+                </h3>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body">Podés reservar directamente por WhatsApp haciendo clic en el <strong>botón de contacto</strong> o desde la <strong>sección de "Reservá tu turno"</strong> (allí se realizará un pequeño formulario para agilizar la respuesta). Si lo hacés desde el botón de contacto recordá aclarar: tu nombre, servicio que querés realizarte, si tenés algún servicio de otro salón o colega para remover, y si tenés un diseño en mente (con que aclares si es algo sencillo o complejo está bien).
+                  </div>
+                </div>
+              </div>
+
+                <!-- Pregunta 4 -->
+              <div class="accordion-item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+                <h3 class="accordion-header" id="heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4"> Me quiero dejar de morder las uñas, ¿qué me recomendás?</button>
+                </h3>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body">Para casos de onicofagia, lo más recomendable es arrancar haciendo esculpidas pequeñas o capping (ya sea con base si no es un caso extremo o acrigel). En la mayoría de los casos, tener cualquier servicio realizado sobre las uñas ayuda a no llevarlas a la boca y morderlas, sacando así de a poco el mal hábito.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pregunta 5 -->              
+              <div class="accordion-item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+                <h3 class="accordion-header" id="heading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> ¿Qué cuidados tengo que tener al realizarme un servicio?</button>
+                </h3>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body">Es importante que entendamos que los productos no son invencibles, y si les damos un mal uso a las uñas el servicio puede no durar como debería. Mis recomendaciones siempre son: <br><strong>No usar las uñas como herramienta</strong>, por ejemplo cuando queremos abrir algo ya sea una lata, una caja, etc, o despegar una cinta, o quitar una mancha de una superficie, todas estas acciones afectan a las puntas de las uñas y muy probablemente el servicio se despegue; <br><strong>Usar guantes para tareas del hogar</strong>, el no hacerlo no solo afecta a nuestra piel y puede traer alergias y resequedad, sino también hace que los servicios se despeguen y se opaque el brillo; <br><strong>No morder las uñas ni la piel proximal</strong>; <br><strong>Cumplir con el service</strong> en el tiempo recomendado, pasado ese tiempo es probable que se empiece a despegar y pueda haber filtraciones de agua, ideal para que las bacterias comiencen a penetrar en las uñas; <br><strong>No arrancarse el producto</strong>, esto las debilitará y cada vez tendrán menos adherencia para futuros servicios.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacto" class="py-5" aria-labelledby="titulo-contacto">
+          <div class="container">
+            <h2 id="titulo-contacto" class="text-center mb-5 fw-bold"  data-aos="fade-left">Reservá tu turno</h2>
+
+            <form id="formularioContacto" class="mx-auto" style="max-width: 500px;">
+              <div class="mb-3" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+              </div>
+
+              <div class="mb-3" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="edad" required>
+              </div>
+
+              <div class="mb-3" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+                <label for="servicio" class="form-label">Servicio</label>
+                <select class="form-select" id="servicio" required>
+                  <option selected disabled value="">Seleccioná un servicio</option>
+                  <option>Manicuría</option>
+                  <option>Semipermanente</option>
+                  <option>Capping con Base</option>
+                  <option>Capping con Acrigel</option>
+                  <option>Esculpidas con Acrigel</option>
+                  <option>Esculpidas con Acrílico</option>
+                </select>
+              </div>
+
+              <div class="mb-3" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+                <label class="form-label">¿Tenés algo en tus uñas para remover?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="remocion" id="remocion-si" value="Sí">
+                  <label class="form-check-label" for="remocion-si">Sí</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="remocion" id="remocion-no" value="No" checked>
+                  <label class="form-check-label" for="remocion-no">No</label>
+                </div>
+              </div>
+
+              <!-- DISEÑO -->
+              <div class="mb-3 d-none" id="opciones-diseno">
+                <label for="tipo-diseno" class="form-label">¿Qué tipo de diseño querés?</label>
+                <select class="form-select" id="tipo-diseno">
+                  <option selected disabled value="">Elegí una opción</option>
+                  <option>Liso o diseño simple</option>
+                  <option>Diseño complejo</option>
+                  <option>Aún no sé</option>
+                </select>
+              </div>
+
+              <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back"><button type="submit" class="btn btn-glam-pink w-100"  >Enviar por WhatsApp</button></div>
+            </form>
+          </div>
+        </section>
+
     </main>
-    <footer>
 
 
+
+    <footer class="bg-dark text-light py-5 mt-5">
+      <div class="container">
+        <div class="row text-center text-md-start">
+
+      <!-- Columna 1: Info -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Glam at Nails</h5>
+            <p class="mb-1">Boedo, CABA</p>
+            <p class="mb-1">Atención por turnos</p>
+            <p class="mb-0">Horarios: Mar a Sáb de 8:30 hs a 18:30 hs</p>
+          </div>
+
+      <!-- Columna 2: Redes y contacto -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Contacto</h5>
+        <p class="mb-1">
+          <i class="bi bi-whatsapp"></i>
+          <a href="https://wa.me/5491123856238" class="text-light text-decoration-none" target="_blank" rel="noopener">
+            +54 9 11 2385 6238
+          </a>
+        </p>
+        <p class="mb-1">
+          <i class="bi bi-instagram"></i>
+          <a href="https://www.instagram.com/tucuenta" class="text-light text-decoration-none" target="_blank" rel="noopener">
+            @glam.at.nailss
+          </a>
+        </p>
+        <p class="mb-0">
+          <i class="bi bi-envelope"></i>
+          <a href="mailto:tuemail@example.com" class="text-light text-decoration-none" target="_blank">
+            glam.at.nails@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <!-- Columna 3: Mapa -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Dónde estamos</h5>
+        <div class="ratio ratio-4x3 rounded overflow-hidden shadow-sm">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5149308247584!2d-58.420280623586735!3d-34.64037986066213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb5cfabea979%3A0x8c4124f0a3cf752b!2sAv.%20San%20Juan%20%26%20Castro%2C%20C1227%20CABA!5e0!3m2!1ses!2sar!4v1697031581874!5m2!1ses!2sar"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Línea inferior -->
+    <div class="text-center mt-4 small text-secondary">
+      &copy; 2025 Glam at Nails. Todos los derechos reservados.
+    </div>
+  </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      duration: 800, // duración en ms
+      once: true     // animar solo una vez
+    });
+</script>
 </body>
 </html>

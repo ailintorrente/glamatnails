@@ -2,13 +2,24 @@
     --color-rosa: #F56476;
     --color-rosa-transparente: #F5647688;
 }
-
+html {
+  scroll-padding-top: 80px;
+}
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
 
+.navbar{
+    z-index: 1000;
+}
 a.nav-link:hover {
     color: var(--color-rosa);
+    font-weight:800;
+}
+.navbar .nav-link.active {
+  color: var(--color-rosa) !important;
+  font-weight: 700;
+  transition: color 0.3s ease;
 }
 
 .header-container {
@@ -45,25 +56,68 @@ a.nav-link:hover {
 .btn-glam-pink{
     background-color: var(--color-rosa);
     color: white;
-    padding: 15px 50px;
+    padding: 15px 100px;
     border-radius: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
 }
 .btn-glam-pink:hover{
     background-color: #F5647688;
 }
 
 .list-group-item.active {
-  background-color: var(--color-rosa);
-  border-color: var(--color-rosa);
-  color: white;
+    background-color: var(--color-rosa);
+    border-color: var(--color-rosa);
+    color: white;
 }
 
 .list-group-item:hover{
-  background-color: var(--color-rosa-transparente);
-  border-color: #FFFFFF;
-  cursor: pointer;
+    background-color: var(--color-rosa-transparente);
+    border-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .list-group-item {
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+
+.galeria-item {
+    aspect-ratio: 1 / 1;
+    height: auto;
+}
+
+.galeria-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.galeria-item .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.05);
+}
+
+.galeria-item:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+footer a:hover{
+    font-weight: bold;
+}
+
+footer h5 {
+    color: var(--color-rosa);
 }
