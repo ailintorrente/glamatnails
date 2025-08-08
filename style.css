@@ -57,7 +57,7 @@ a.nav-link:hover {
     background-color: var(--color-rosa);
     color: white;
     padding: 15px;
-    width: 400px;
+    width: 300px;
     border-radius: 30px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     border: none;
