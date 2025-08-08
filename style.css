@@ -56,7 +56,8 @@ a.nav-link:hover {
 .btn-glam-pink{
     background-color: var(--color-rosa);
     color: white;
-    padding: 15px 100px;
+    padding: 15px;
+    width: 400px;
     border-radius: 30px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     border: none;
