@@ -76,7 +76,7 @@ const servicios = {
     return;
 }
 
-    let mensaje = `Hola! Soy ${nombre}, tengo ${edad} años y quiero reservar un turno para: ${servicio}.`;
+    let mensaje = `Hola! Soy ${nombre}, quiero reservar un turno para: ${servicio}.`;
 
     if (remocion === "Sí") {
       mensaje += ` Tengo un trabajo hecho en mis uñas para remover.`;
