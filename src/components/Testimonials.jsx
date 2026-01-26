@@ -4,8 +4,8 @@ import SectionTitle from "./SectionTitle";
 
 const testimonials = [
     {
-        name: "Lucía R.",
-        text: "Ailin es una genia total. Mis uñas duran intactas semanas y siempre salgo enamorada del diseño. El detalle y el cuidado que le pone a cada servicio es increíble.",
+        name: "Maca R.",
+        text: "Ailu es una excelente profesional. Súper detallista, prolija y siempre cuida tus uñas. Cada trabajo dura un montón y es destacable la buena atención con cada cliente. La recomiendo totalmente ♥️",
     },
     {
         name: "Martina S.",

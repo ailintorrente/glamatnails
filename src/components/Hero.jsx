@@ -45,7 +45,7 @@ const Hero = () => {
             </ul>
 
             <a
-              href="https://wa.me/549115..."
+              href="https://wa.me/5491123856238"
               className="btn-primary"
             >
               Escribinos por WhatsApp

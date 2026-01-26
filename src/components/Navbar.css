@@ -2,6 +2,7 @@
   background: #02020baa;
   backdrop-filter: blur(10px);
   transition: 0.3s ease-in-out;
+  z-index:1000;
 }
 
 .logo {

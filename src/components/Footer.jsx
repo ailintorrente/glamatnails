@@ -1,4 +1,5 @@
 import "./Footer.css";
+import imgFooter from "../assets/logo-glam-inverted.png"
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="footer-container">
         {/* Brand */}
         <div className="footer-col">
-          <h3 className="footer-title">Glam at Nails</h3>
+          <img src={imgFooter} alt="Logo Glam at Nails" className="img-footer" />
           <p>Boedo, CABA</p>
           <p>Atención exclusivamente por turnos</p>
           <p className="footer-hours">

@@ -37,13 +37,12 @@ const About = () => {
 
         <div className="about-text">
           <p>
-            Soy manicura profesional y creadora de Glam at Nails. Trabajo de
-            forma personalizada, dedicando cada turno a una sola clienta para
-            garantizar prolijidad, cuidado y un resultado que realmente te
-            represente.
+            Soy manicura profesional y creadora de Glam at Nails. Trabajo de forma personalizada, dedicando cada turno a una sola clienta para garantizar prolijidad, cuidado y un resultado que realmente te represente.
           </p>
           <p>
-            Glam nació en plena pandemia a partir de la necesidad de hacer algo que me brinde mis propios ingresos. Con tan solo 19 años elegí comenzar a emprender en este rubro tan hermoso y gigante, y hoy me encuentro con más de 300 clientas que han pasado por el Homestudio y muchísima experiencia y conocimientos adquiridos.
+            Glam nació en plena pandemia, a partir de la necesidad de crear algo propio y construir mis propios ingresos. Con tan solo 19 años, elegí emprender en este rubro tan hermoso y desafiante, y hoy cuento con más de 300 clientas que ya pasaron por el homestudio, además de muchísima experiencia y formación constante.
+          </p>
+          <p>Mi objetivo es que cada turno sea un momento de disfrute, confianza y cuidado, donde tus uñas sean protagonistas sin descuidar la salud natural.
           </p>
 
           <ul className="about-list">

@@ -13,11 +13,10 @@
   gap: 50px;
 }
 
-/* Titles */
-.footer-title {
-  color: var(--pink-main);
-  font-size: 1.4rem;
-  margin-bottom: 14px;
+
+.img-footer{
+  height: 5rem;
+  margin-bottom: 10px;
 }
 
 .footer-col h4 {

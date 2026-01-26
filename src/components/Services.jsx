@@ -28,7 +28,7 @@ const servicesData = [
 
         <ul className="bullet-list">
           <li><strong>Clásica:</strong> con empujador y alicate.</li>
-          <li><strong>Rusa:</strong> con torno y fresa para una limpieza más profunda.</li>
+          <li><strong>Rusa:</strong> con torno y fresa para una limpieza más profunda. No recomendable en pieles sensibles.</li>
         </ul>
 
         <p className="service-note">
@@ -76,17 +76,17 @@ const servicesData = [
     content: (
       <>
         <p className="service-intro">
-          Es un servicio que refuerza la uña natural sin alargarla.
+          Es un servicio que refuerza la uña natural sin alargarla. Se realiza aplicando un producto resistente sobre la uña natural para protegerla.
         </p>
 
         <ul className="bullet-list">
           <li>
             <strong>Con BASE NIVELADORA ⭐ el más elegido ⭐</strong><br />
-            Ideal para mantener el largo natural con un leve refuerzo.
+            Ideal para mantener el largo natural con un leve refuerzo. Corrige ondulaciones, es ligero y flexible.
           </li>
           <li>
             <strong>Con ACRIGEL o GEL</strong><br />
-            Ideal si utilizás mucho las manos.
+            Reforzá tus uñas con un material más firme y fuerte. Ideal si utilizás mucho las manos o tus uñas se quiebran fácilmente.
           </li>
         </ul>
 
@@ -108,12 +108,12 @@ const servicesData = [
     content: (
       <>
         <p className="service-intro">
-          Técnica que permite alargar y dar estructura a las uñas naturales.
+          Técnica que permite alargar y dar estructura a las uñas naturales con molde y 100% personalizado desde cero.
         </p>
 
         <ul className="bullet-list">
-          <li><strong>ACRIGEL:</strong> liviano y flexible.</li>
-          <li><strong>ACRÍLICO:</strong> más rígido y resistente.</li>
+          <li><strong>ACRIGEL:</strong> liviano y flexible. Ideal hasta largo 2 o 3 de molde. Resistente, cómodo y natural. Es un producto de manejo rápido e inodoro.</li>
+          <li><strong>ACRÍLICO:</strong> más rígido y resistente. Ideal para uñas mucho más largas o que necesiten una mayor resistencia. Se utiliza monómero (líquido con fuerte olor) y polímero (polvo acrílico). Su secado es al aire y con calor, por lo que en invierno puede tardar un poco más debido a las bajas temperaturas.</li>
         </ul>
 
         <p className="service-duration">
@@ -150,7 +150,7 @@ const Services = () => {
       <SectionTitle
         badge="SERVICIOS"
         title="Uñas pensadas para vos"
-        subtitle="Técnicas personalizadas según tu estilo y necesidad."
+        subtitle="Técnicas personalizadas según tu estilo y necesidad. Precios correspondientes a Febrero 2026."
       />
 
       <div className="services-wrapper">
@@ -172,7 +172,7 @@ const Services = () => {
           {activeService.content}
 
           <a
-            href="https://wa.me/549115..."
+            href="https://wa.me/5491123856238"
             className="btn-primary"
             target="_blank"
             rel="noopener noreferrer"
