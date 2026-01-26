@@ -1,0 +1,50 @@
+.glass-nav {
+  background: #02020baa;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease-in-out;
+}
+
+.logo {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  color: var(--pink-main);
+}
+
+.logo-img {
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 45px;
+  }
+}
+
+.nav-link {
+  color: var(--grey-light);
+  font-weight: 500 !important;
+  letter-spacing: 1px !important;
+  font-size: 1.1rem !important;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--pink-medium)!important;
+}
+
+/* Mobile menu look */
+@media (max-width: 1199px) {
+  .navbar-collapse {
+    padding: 20px 0;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+}

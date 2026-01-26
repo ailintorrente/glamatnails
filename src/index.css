@@ -1,0 +1,71 @@
+
+:root {
+  --pink-main: #f56476;
+  --pink-medium: #cd94a4;
+  --pink-light: #f0d7d9;
+  --dark: #02020b;
+  --grey-dark: #444054;
+  --grey-light: #e9e9e9;
+
+  --font-title: 'Oswald', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+  --font-cursive: 'Great Vibes', sans-serif;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+body {
+  background-color: var(--grey-light);
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+h2{
+  font-size: 4rem !important;
+  font-family: var(--font-cursive);
+  font-weight: 500;
+  transition: all .2s;
+  margin: 10px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+
+.btn-primary {
+  background: var(--pink-main);
+  padding: 14px 34px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: fit-content;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--pink-medium);
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--pink-main);
+}
+
+.btn-secondary:hover {
+  background: rgba(245, 100, 118, 0.15);
+}
+
+.btn-primary .arrow {
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover .arrow {
+  transform: translateX(6px);
+}

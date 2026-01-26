@@ -1,0 +1,134 @@
+.footer {
+  background-color: var(--dark);
+  color: white;
+  padding: 80px 20px 30px;
+  font-family: var(--font-body);
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.3fr;
+  gap: 50px;
+}
+
+/* Titles */
+.footer-title {
+  color: var(--pink-main);
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.footer-col h4 {
+  color: var(--pink-main);
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+/* Text */
+.footer-col p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: #f1f1f1;
+}
+
+.footer-hours {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--grey-light);
+}
+
+/* Lists */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+
+  /* 👇 CLAVE */
+  transition: transform 0.3s ease;
+}
+
+.footer-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Icons */
+.footer-list i,
+.footer-address i {
+  color: var(--pink-main);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* ✨ Hover PRO: ícono + texto juntos */
+.footer-list li:hover {
+  transform: translateX(6px);
+}
+
+.footer-list li:hover i {
+  color: var(--pink-medium);
+}
+
+.footer-list li:hover a {
+  color: var(--pink-medium);
+}
+
+/* Address */
+.footer-address {
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+/* Transport */
+.footer-transport {
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+  color: var(--grey-light);
+}
+
+.footer-transport strong {
+  color: white;
+}
+
+/* Map */
+.footer-map iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 18px;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.8rem;
+  color: var(--grey-dark);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-map iframe {
+    height: 220px;
+  }
+
+  .footer-col {
+    text-align: left;
+  }
+}
