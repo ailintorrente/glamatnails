@@ -3,14 +3,14 @@ import "./Gallery.css";
 import SectionTitle from "./SectionTitle";
 
 // Importá tus imágenes
-import img1 from "../assets/galeria1.jpeg";
-import img2 from "../assets/galeria2.jpeg";
-import img3 from "../assets/galeria3.jpeg";
-import img4 from "../assets/galeria4.jpeg";
-import img5 from "../assets/galeria5.jpeg";
-import img6 from "../assets/galeria6.jpeg";
-import img7 from "../assets/galeria7.jpeg";
-import img8 from "../assets/galeria8.jpeg";
+import img1 from "../assets/galeria1.JPEG";
+import img2 from "../assets/galeria2.JPEG";
+import img3 from "../assets/galeria3.JPEG";
+import img4 from "../assets/galeria4.JPEG";
+import img5 from "../assets/galeria5.JPEG";
+import img6 from "../assets/galeria6.JPEG";
+import img7 from "../assets/galeria7.JPEG";
+import img8 from "../assets/galeria8.JPEG";
 
 const galleryData = [
   {
