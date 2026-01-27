@@ -36,11 +36,10 @@ export default function PautasModal() {
             <ul>
               <li>Consultar disponibilidad del turno antes de señar.</li>
               <li>
-                La seña de <strong>$8.000</strong> es obligatoria para reservar
-                y <strong>no es reembolsable</strong>.
+                La seña de <strong>$10.000</strong> es obligatoria para reservar.
               </li>
               <li>
-                No se devuelve la seña si:
+                La seña <strong>no es reembolsable</strong> si:
                 <ul>
                   <li>Avisás con menos de 48 hs de anticipación.</li>
                   <li>Llegás 20 minutos o más tarde.</li>

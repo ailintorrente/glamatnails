@@ -1,10 +1,8 @@
 .services {
   padding: 100px 20px;
-  background: linear-gradient(
-    180deg,
-    var(--grey-light) 0%,
-    #f7f4f6 100%
-  );
+  background: linear-gradient(180deg,
+      var(--grey-light) 0%,
+      #f7f4f6 100%);
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.7s ease, transform 0.7s ease;
@@ -23,6 +21,7 @@
   margin-bottom: 50px;
   color: var(--grey-dark);
 }
+
 .services-wrapper {
   display: flex;
   gap: 40px;
@@ -48,8 +47,9 @@
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
-    font-size: 0.95rem;
+  font-size: 0.95rem;
   letter-spacing: 0.2px;
+  color: var(--grey-dark);
 }
 
 .services-item:hover {
@@ -57,11 +57,9 @@
 }
 
 .services-item.active {
-  background: linear-gradient(
-    to right,
-    var(--pink-main),
-    var(--pink-medium)
-  );
+  background: linear-gradient(to right,
+      var(--pink-main),
+      var(--pink-medium));
   color: white;
   font-weight: 600;
 }
@@ -176,6 +174,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

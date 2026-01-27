@@ -5,6 +5,8 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
 .overlay {
@@ -149,5 +151,26 @@
 
   .hero-actions {
     align-items: center;
+  }
+
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width:400px){
+      .hero-card ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-card li {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
 }
