@@ -54,6 +54,17 @@ export default function Testimonials() {
                     ))}
                 </div>
             </div>
+            <div className="testimonials-cta">
+  <button
+    className="btn-primary"
+    onClick={() => {
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    Yo también quiero vivir la experiencia Glam ✨
+  </button>
+</div>
+
         </section>
     );
 }

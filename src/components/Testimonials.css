@@ -47,3 +47,15 @@
   color: var(--pink-main);
   align-self: flex-end;
 }
+
+.testimonials-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .testimonials-cta {
+    margin-top: 32px;
+  }
+}
