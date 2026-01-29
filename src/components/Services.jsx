@@ -150,7 +150,7 @@ const Services = () => {
       <SectionTitle
         badge="SERVICIOS"
         title="Uñas pensadas para vos"
-        subtitle="Técnicas personalizadas según tu estilo y necesidad. Precios correspondientes a Febrero 2026."
+        subtitle="Técnicas personalizadas según tu estilo y necesidad. Precios base correspondientes a Febrero 2026. Todos los precios incluyen 4 uñas con decoración una simple, consultar cotización para decoraciones más complejas."
       />
 
       <div className="services-wrapper">
